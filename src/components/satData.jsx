@@ -1,3 +1,6 @@
+import './styling.css';
+
+
 const satData = [
    {
      id: 1,
@@ -80,5 +83,7 @@ const satData = [
      operational: true
    }
  ];
+
+ 
  
  export default satData;

@@ -1,3 +1,6 @@
+import React from 'react';
+import './styling.css';
+
 
 const Table = ({ sat }) => {
   return (
@@ -16,7 +19,7 @@ const Table = ({ sat }) => {
             <td>{data.name}</td>
             <td>{data.type}</td>
             <td>{data.launchDate}</td>
-            <td>{data.operational ? "Active" : "Inactive"}</td>
+            <td style={{ color: data.operational ? 'green' : 'red' }}>{data.operational ? 'Active' : 'Inactive'}</td>
           </tr>
         ))}
       </tbody>
